@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background">
+        <h1 id="title">Mini Cactpot Simulator </h1>
+        <div class="arrowbutton" id="arrow1">
+            <i class="arrowright"></i>
+        </div>
+        <div class="arrowbutton" id="arrow2">
+            <i class="arrowright"></i>
+        </div>
+        <div class="arrowbutton" id="arrow3">
+            <i class="arrowright"></i>
+        </div>
+        <div class="arrowbutton" id="arrow4">
+            <i class="arrowdownright"></i>
+        </div>
+        <div class="arrowbutton" id="arrow5">
+            <i class="arrowdown"></i>
+        </div>
+        <div class="arrowbutton" id="arrow6">
+            <i class="arrowdown"></i>
+        </div>
+        <div class="arrowbutton" id="arrow7">
+            <i class="arrowdown"></i>
+        </div>
+        <div class="arrowbutton" id="arrow8">
+            <i class="arrowdownleft"></i>
+        </div>
+        <div class="enabled" id="gridbackground">
+            <div class="row">
+                <div class="column enabled" id="cell1">
+                    <h3 class="number">1</h3>
+                </div>
+                <div class="column enabled" id="cell2">
+                    <h3 class="number">2</h3>
+                </div>
+                <div class="column enabled" id="cell3">
+                    <h3 class="number">3</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column enabled" id="cell4">
+                    <h3 class="number">4</h3>
+                </div>
+                <div class="column enabled" id="cell5">
+                    <h3 class="number">5</h3>
+                </div>
+                <div class="column enabled" id="cell6">
+                    <h3 class="number">6</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column enabled" id="cell7">
+                    <h3 class="number">7</h3>
+                </div>
+                <div class="column enabled" id="cell8">
+                    <h3 class="number">8</h3>
+                </div>
+                <div class="column enabled" id="cell9">
+                    <h3 class="number">9</h3>
+                </div>
+            </div>
+
+        </div>
+        <div id="payouts">
+            <h2 id="payoutstitle">Payouts</h2>
+            <table id="payoutstable1">
+                <tr>
+                    <th class="payoutstabletitle">Sum</th>
+                    <th class="payoutstabletitle">Payout</th>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">6</td>
+                    <td class="payoutstableright">10,000</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">7</td>
+                    <td class="payoutstableright">36</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">8</td>
+                    <td class="payoutstableright">720</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">9</td>
+                    <td class="payoutstableright">360</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">10</td>
+                    <td class="payoutstableright">80</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">11</td>
+                    <td class="payoutstableright">252</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">12</td>
+                    <td class="payoutstableright">108</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">13</td>
+                    <td class="payoutstableright">72</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">14</td>
+                    <td class="payoutstableright">54</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">15</td>
+                    <td class="payoutstableright">180</td>
+                </tr>
+            </table>
+            <table id="payoutstable2">
+                <tr>
+                    <th class="payoutstabletitle">Sum</th>
+                    <th class="payoutstabletitle">Payout</th>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">16</td>
+                    <td class="payoutstableright">72</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">17</td>
+                    <td class="payoutstableright">180</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">18</td>
+                    <td class="payoutstableright">119</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">19</td>
+                    <td class="payoutstableright">36</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">20</td>
+                    <td class="payoutstableright">306</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">21</td>
+                    <td class="payoutstableright">1,080</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">22</td>
+                    <td class="payoutstableright">144</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">23</td>
+                    <td class="payoutstableright">1,800</td>
+                </tr>
+                <tr>
+                    <td class="payoutstableleft">24</td>
+                    <td class="payoutstableright">3,600</td>
+                </tr>
+            </table>
+        </div>
+        <div id="infotext">
+            Info text goes here.
+        </div>
+        <table id="totalwon">
+            <tr>
+                <td class="totalwonleft">Total games played:</td>
+                <td class="totalwonright" id="gamesplayed">0</td>
+            </tr>
+            <tr>
+                <td class="totalwonleft">Total amount won:</td>
+                <td class="totalwonright" id="amountwon">0</td>
+            </tr>
+        <table>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+</body>
